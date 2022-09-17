@@ -42,6 +42,7 @@ socket.on('lista_chat', chat => {
 const buttonChat = document.getElementById("enviar")
 
 buttonChat?.addEventListener("click", () => {
+
     const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
     if (regex.test(document.getElementById("email").value)) {
         const f = new Date()
